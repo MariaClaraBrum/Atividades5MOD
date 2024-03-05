@@ -8,22 +8,32 @@
 </head>
 <body>
 
-    <script>
+<script>
 
-let = prompt("Digite um dado, seja número seja letra");
+let dado;
 
-var varchar = "Bom dia"; 
-var int = 456;    
+do {
+    dado = prompt("Insira um dado: ");
+} while (dado === null || dado === "");
 
+let numero = !isNaN(parseFloat(dado)) && isFinite(dado);
+let boolean = dado.toUpperCase() === "TRUE" || dado.toUpperCase() === "FALSE";
 
-if (typeof varchar === 'string') {
-    alert("A informação é uma string (varchar)");
+if (numero) {
+    alert("O dado é um Número");
+} else if (boolean) {
+    alert("O dado é Boleano");
 } else {
-    alert("A informação não é uma string (varchar)");
+    alert("O dado é uma String");
 }
 
+alert("Obrigada por visitar essa página");
 
-    </script>
-    
+</script>
+
+<h3>Atividade 1 - Tipo de Dado </h3>
+<br>
+<a href="index.html">Voltar a Página Principal</a>
+
 </body>
 </html>
