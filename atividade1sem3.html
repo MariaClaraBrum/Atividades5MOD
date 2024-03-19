@@ -13,14 +13,12 @@
     const mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio',
         'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-    // Obter a data atual
     const data = new Date();
     const dia = data.getDate();
     const DiasdaSemana = Semana[data.getDay()];
     const meses = mes[data.getMonth()];
     const ano = data.getFullYear();
 
-    // Formatar a data
     const DatadeHoje = `${DiasdaSemana}, ${dia} de ${meses} de ${ano}`;
 
     document.write(DatadeHoje);
