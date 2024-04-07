@@ -51,8 +51,8 @@
             <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="botao" onclick="clean()">C</button></td>
-                    <td><button class="botao" onclick="back()">CE</button></td>
+                    <td><button class="botao" onclick="limpar()">C</button></td>
+                    <td><button class="botao" onclick="voltar()">CE</button></td>
                     <td><button class="botao" onclick="insert('/')">/</button></td>
                     <td><button class="botao" onclick="insert('*')">X</button></td>
                 </tr>
@@ -87,11 +87,11 @@
             var numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
-        function clean()
+        function limpar()
         {
             document.getElementById('resultado').innerHTML = "";
         }
-        function back()
+        function voltar()
         {
             var resultado = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
